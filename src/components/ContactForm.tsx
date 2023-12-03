@@ -5,7 +5,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Contact() {
+export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
 
   return (
@@ -131,7 +131,7 @@ export default function Contact() {
                   'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
                 )}
               >
-                <span className="sr-only font-suit_regular">약관 동의</span>
+                <span className="font-suit_regular sr-only">약관 동의</span>
                 <span
                   aria-hidden="true"
                   className={classNames(
