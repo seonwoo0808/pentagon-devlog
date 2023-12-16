@@ -8,12 +8,14 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    setScrollPosition(window.scrollY);
   };
-  if (scrollPosition <= document.body.clientHeight / 2) {
+  if (scrollPosition <= document.body.clientHeight / 8) {
     document.body.classList.remove('bg-gray-900');
+    console.log('remove' + scrollPosition);
   } else {
     document.body.classList.add('bg-gray-900');
+    console.log('add' + scrollPosition);
   }
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
