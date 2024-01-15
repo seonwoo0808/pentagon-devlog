@@ -8,16 +8,16 @@ import {
 const Portfolio = () => {
   const awardAndCertificates = [
     {
-      id: 5,
+      id: 6,
       date: '2023.12.02',
       host: '과학기술정보통신부',
       award: '2023 데이터 크리에이터 캠프',
       grade: '대상(과학기술정보통신부 장관상)',
       icon: <TrophyIcon className="mr-1 h-5 w-5" fill="#eec400" />,
-      description: '',
+      description: '미래산업 부문',
     },
     {
-      id: 4,
+      id: 5,
       date: '2023.12.01',
       host: '과학기술정보통신부',
       award: '2023 공개SW개발자대회',
@@ -26,7 +26,7 @@ const Portfolio = () => {
       description: 'VOAH 출품',
     },
     {
-      id: 3,
+      id: 4,
       date: '2023.10.10',
       host: '한국정보통신자격협회',
       award: '네트워크관리사',
@@ -35,6 +35,15 @@ const Portfolio = () => {
         <ClipboardDocumentCheckIcon className="mr-1 h-5 w-5" fill="#64645a" />
       ),
       description: '국가공인 민간자격',
+    },
+    {
+      id: 3,
+      date: '2023.08.01',
+      host: '세종특별자치시',
+      award: '세종특별자치시 공공데이터 창업경진대회',
+      grade: '우수상',
+      icon: <TrophyIcon className="mr-1 h-5 w-5" fill="#a0a0a0" />,
+      description: '제품 및 서비스 개발 부문',
     },
     {
       id: 2,
