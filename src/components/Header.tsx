@@ -12,10 +12,8 @@ export default function Example() {
   };
   if (scrollPosition <= document.body.clientHeight / 8) {
     document.body.classList.remove('bg-gray-900');
-    console.log('remove' + scrollPosition);
   } else {
     document.body.classList.add('bg-gray-900');
-    console.log('add' + scrollPosition);
   }
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
